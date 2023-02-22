@@ -1,0 +1,589 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://manoli-iborra.github.io/PowerBI/pag4.html">
+      
+      <link rel="icon" href="imagenes/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.6">
+    
+    
+      
+        <title>**FASE 1: GET DATA** - PowerBI</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.802231af.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.3f5d1f46.min.css">
+        
+          
+          
+          <meta name="theme-color" content="">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+  
+
+
+  
+
+  
+
+
+  <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-DSTGE8QTPP"),document.addEventListener("DOMContentLoaded",function(){"undefined"!=typeof location$&&location$.subscribe(function(t){gtag("config","G-DSTGE8QTPP",{page_path:t.pathname})})})</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DSTGE8QTPP"></script>
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="deep-blue" data-md-color-accent="deep-orange">
+  
+    
+    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#fase-1-get-data" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="index.html" title="PowerBI" class="md-header__button md-logo" aria-label="PowerBI" data-md-component="logo">
+      
+  <img src="imagenes/logofp.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PowerBI
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              **FASE 1: GET DATA**
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Limpiar" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="PowerBI" class="md-nav__button md-logo" aria-label="PowerBI" data-md-component="logo">
+      
+  <img src="imagenes/logofp.png" alt="logo">
+
+    </a>
+    PowerBI
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        1. Introducción
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pag1.html" class="md-nav__link">
+        2. Power BI
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pag2.html" class="md-nav__link">
+        3. Power BI Service
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" data-md-state="indeterminate" type="checkbox" id="__nav_4" checked>
+      
+      <label class="md-nav__link" for="__nav_4">
+        4. Power BI Desktop
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="4. Power BI Desktop" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          4. Power BI Desktop
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pagina7.md" class="md-nav__link">
+        4.1. Get Data
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pagina8.md" class="md-nav__link">
+        4.2. Data Preparation
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pagina3.md" class="md-nav__link">
+        5. Power Query Editor
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pagina5.md" class="md-nav__link">
+        6. Creación de informes
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pagina6.md" class="md-nav__link">
+        7. Taller: Mejora de informes en Power BI
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#archivos-o-ficheros" class="md-nav__link">
+    Archivos o Ficheros
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#database" class="md-nav__link">
+    DataBase
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-platform" class="md-nav__link">
+    Power Platform
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#servicios-externos" class="md-nav__link">
+    Servicios externos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conector-de-mongodb-para-bi" class="md-nav__link">
+    Conector de MongoDB para BI
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optimizacion-de-la-carga-de-datos" class="md-nav__link">
+    Optimización de la carga de datos
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="fase-1-get-data"><strong>FASE 1: GET DATA</strong><a class="headerlink" href="#fase-1-get-data" title="Permanent link">&para;</a></h1>
+<p>Power BI agrupa los tipos de conectores de los que dispone, para extraer información desde los diferentes orígenes por familias.</p>
+<p><img alt="imagen" src="imagenes/getdata1.PNG" /></p>
+<h2 id="archivos-o-ficheros"><strong>Archivos o Ficheros</strong><a class="headerlink" href="#archivos-o-ficheros" title="Permanent link">&para;</a></h2>
+<p>Conexión a orígenes de tipo físico, que contienen información estructurada y comprensible para su extracción desde la herramienta.</p>
+<p><img alt="imagen" src="imagenes/getdata2.PNG" /></p>
+<h2 id="database">DataBase<a class="headerlink" href="#database" title="Permanent link">&para;</a></h2>
+<p>Hay dos métodos de conectividad, es decir dos maneras de almacenar las tablas.</p>
+<p><img alt="imagen" src="imagenes/getdata3.PNG" /></p>
+<p><strong>Import Query</strong>: </p>
+<ul>
+<li>
+<p>Extrae la información de la base de datos y la mete dentro de Power BI Desktop.</p>
+</li>
+<li>
+<p>Importa la base de datos con metadatos, estructura, relaciones,...</p>
+</li>
+<li>
+<p>No existen restricciones para hacer cualquier tipo de manipulación.</p>
+</li>
+<li>
+<p>Existe limitación de 1GB para almacenar las tablas en nuestro pbix.</p>
+</li>
+<li>
+<p>La información puede ser actualizada hasta 8 veces por día desde Power BI Service de forma programada o desde Power BI Desktop con el botón <strong><em>Actualizar</em></strong>.</p>
+</li>
+</ul>
+<p><strong>Direct Query</strong></p>
+<ul>
+<li>Lanza varias queries para obtener datos que tenemos en el origen de datos (no almacena los datos en Power BI).</li>
+<li>No permite hacer ciertas manipulaciones (por ejemplo, eliminar columnas).</li>
+<li>La información se actualiza enn vivo (sin botón actualizar).</li>
+</ul>
+<p>Otra opción que aparece en los dos métodos de conectividad:</p>
+<p><img alt="imagen" src="imagenes/getdata4.PNG" /></p>
+<p>Opciones avanzadas:</p>
+<ul>
+<li>Limita el tiempo de extracción de datos.</li>
+<li>Optimiza el tamaño de las tablas (permitiendo crear consultas).</li>
+<li>Incluye relaciones entre columnas.</li>
+</ul>
+<h2 id="power-platform"><strong>Power Platform</strong><a class="headerlink" href="#power-platform" title="Permanent link">&para;</a></h2>
+<p>falta</p>
+<h2 id="servicios-externos"><strong>Servicios externos</strong><a class="headerlink" href="#servicios-externos" title="Permanent link">&para;</a></h2>
+<p>Obtener datos de una página Web:</p>
+<p><img alt="imagen" src="imagenes/getdata5.PNG" /></p>
+<p>Obtener datos de Python:</p>
+<p><img alt="imagen" src="imagenes/getdata6.PNG" /></p>
+<p>Obtener datos de Power BI datasets (Centro de datos):Permite obtener las tablas de un pbxi que ya teníamos creado.</p>
+<p><img alt="imagen" src="imagenes/getdata8.PNG" /></p>
+<p>Especificar datos:</p>
+<p><img alt="imagen" src="imagenes/getdata7.PNG" /></p>
+<h2 id="conector-de-mongodb-para-bi"><strong>Conector de MongoDB para BI</strong><a class="headerlink" href="#conector-de-mongodb-para-bi" title="Permanent link">&para;</a></h2>
+<p>El conector de BI sirve exclusivamente para unir su clúster de MongoDB con herramientas de inteligencia empresarial, en nuestro caso con PowerBI.</p>
+<p>Los componentes son:</p>
+<ul>
+<li><strong>Herramienta de BI:</strong> Herramientas de visualización y generación de informes, como Tableau y PowerBI. Se ejecuta en el equipo local.</li>
+<li><strong>JDBC o ODBC conductor:</strong> Proporciona un método estándar para conectarse al conector de BI y MongoDB.</li>
+<li><strong>Conector BI:</strong> Proporciona un esquema relacional y traduce consultas entre su herramienta de BI y MongoDB.</li>
+<li><strong>MongoDB:</strong> Implementación de bases de datos MongoD.</li>
+</ul>
+<p><img alt="imagen" src="imagenes/conector0.PNG" /></p>
+<p>Configuración del conector BI:</p>
+<p><img alt="imagen" src="imagenes/conector00.PNG" /></p>
+<p>Pasos:</p>
+<ol>
+<li>
+<p>Asegúrese de que está instalado MongoDB.</p>
+</li>
+<li>
+<p>Descarga e instala MongoDB BI Connector (mongogdb-odbc-connector) seleccionando la versión de acuerdo con la máquina que estés utilizando.</p>
+</li>
+</ol>
+<p><a href="https://www.mongodb.com/try/download/mongosync">enlace</a></p>
+<p><img alt="imagen" src="imagenes/mongo2.PNG" /></p>
+<ol start="3">
+<li>Agregar <em>mongodb-odbc-driver</em> a los orígenes de datos ODBC.</li>
+</ol>
+<ul>
+<li>Después de instalar ODBC, entra a la carpeta de MongoDB y asegurate de que tienes 2 carpetas nuevas.</li>
+<li>Entra en la carpeta <strong>path/Connector for BI/2.1/bin</strong> y ejecuta <em>mongosqld.exe</em> y te aparecerá la siguiente pantalla:</li>
+</ul>
+<p><img alt="imagen" src="imagenes/mongo3.PNG" /></p>
+<ul>
+<li>Abre orígenes de datos ODBC desde el menú de inicio.</li>
+</ul>
+<p><img alt="imagen" src="imagenes/mongo4.PNG" /></p>
+<ul>
+<li>Pulsamos "Agregar..." para agregar mongodb-odbc-driver a las fuentes de datos.</li>
+</ul>
+<p><img alt="imagen" src="imagenes/mongo5.PNG" /></p>
+<ul>
+<li>Seleccionamos <strong>MongoDB ODBC 1.0 Unicode Driver</strong>.</li>
+</ul>
+<p><img alt="imagen" src="imagenes/mongo6.PNG" /></p>
+<ul>
+<li>Completamos la información sobre el conector de BI desde el servicio en ejecución mongosqld.</li>
+</ul>
+<p><img alt="imagen" src="imagenes/mongo7.PNG" /></p>
+<p><img alt="imagen" src="imagenes/mongo8.PNG" /></p>
+<ol start="4">
+<li>Abre Power BI y en obtener datos, seleccionar más para encontrar ODBC.</li>
+</ol>
+<p><img alt="imagen" src="imagenes/mongo9.PNG" /></p>
+<p>Seleccionamos el origen de datos que hemos creado en el paso anterior.</p>
+<p><img alt="imagen" src="imagenes/mongo10.PNG" /></p>
+<h2 id="optimizacion-de-la-carga-de-datos"><strong>Optimización de la carga de datos</strong><a class="headerlink" href="#optimizacion-de-la-carga-de-datos" title="Permanent link">&para;</a></h2>
+<p>Cosas que tenemos que tener en cuenta:</p>
+<ol>
+<li>Cargar tablas directamente mediante SQL Queries.</li>
+<li>Quitar columnas innecesarias.</li>
+<li>Elegir tipo de datos adecuado.</li>
+<li>Minimiza el uso de filtros en informes.</li>
+<li>Optimizar el uso de funciones DAX.</li>
+<li>Elimina granularidad en los datos.</li>
+</ol>
+<p>Tenemos un Analizador de rendimiento:</p>
+<p><img alt="imagen" src="imagenes/getdata9.PNG" /></p>
+<ul>
+<li>Monitoriza los reports.</li>
+<li>Informes con rendimiento bajo.</li>
+<li>Actualización lenta de datos.</li>
+</ul>
+<p>El analizador nos devuelve el tiempo en milisegundos que ha tardado en realizar cada acción.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            2022-2023 Manuela Iborra - Licencia CC BY-NC-SA
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+      <a href="mailto:<m.iborra@edu.gva.es>" target="_blank" rel="noopener" title="" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M400 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48zM178.117 262.104C87.429 196.287 88.353 196.121 64 177.167V152c0-13.255 10.745-24 24-24h272c13.255 0 24 10.745 24 24v25.167c-24.371 18.969-23.434 19.124-114.117 84.938-10.5 7.655-31.392 26.12-45.883 25.894-14.503.218-35.367-18.227-45.883-25.895zM384 217.775V360c0 13.255-10.745 24-24 24H88c-13.255 0-24-10.745-24-24V217.775c13.958 10.794 33.329 25.236 95.303 70.214 14.162 10.341 37.975 32.145 64.694 32.01 26.887.134 51.037-22.041 64.72-32.025 61.958-44.965 81.325-59.406 95.283-70.199z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": ".", "features": ["header.autohide", "navigation.expand"], "translations": {"clipboard.copy": "Copiar al portapapeles", "clipboard.copied": "Copiado al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.term.missing": "Falta", "select.version.title": "Seleccionar versi\u00f3n"}, "search": "assets/javascripts/workers/search.409db549.min.js", "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.756773cc.min.js"></script>
+      
+    
+  </body>
+</html>
