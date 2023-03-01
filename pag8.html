@@ -16,7 +16,7 @@
     
     
       
-        <title>**FASE 2: DATA PREPARATION** - Power BI</title>
+        <title>4.2. Data Preparation - Power BI</title>
       
     
     
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              **FASE 2: DATA PREPARATION**
+              4.2. Data Preparation
             
           </span>
         </div>
@@ -233,12 +233,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" data-md-state="indeterminate" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       <label class="md-nav__link" for="__nav_4">
         4. Power BI Desktop
@@ -266,10 +268,56 @@
             
   
   
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="pag8.html" class="md-nav__link md-nav__link--active">
+        4.2. Data Preparation
+      </a>
+      
+    </li>
+  
+
+          
+            
+  
+  
   
     <li class="md-nav__item">
-      <a href="pagina8.md" class="md-nav__link">
-        4.2. Data Preparation
+      <a href="paginax.md" class="md-nav__link">
+        4.3. Data Modeling
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="paginaxx.md" class="md-nav__link">
+        4.4. Data Visualization
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="paginaxxx.md" class="md-nav__link">
+        4.5. Data Reporting
       </a>
     </li>
   
@@ -289,7 +337,7 @@
   
   
     <li class="md-nav__item">
-      <a href="pagina3.md" class="md-nav__link">
+      <a href="pag3.html" class="md-nav__link">
         5. Power Query Editor
       </a>
     </li>
@@ -345,56 +393,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#archivos-o-ficheros" class="md-nav__link">
-    Archivos o Ficheros
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#database" class="md-nav__link">
-    DataBase
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#power-platform" class="md-nav__link">
-    Power Platform
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#servicios-externos" class="md-nav__link">
-    Servicios externos
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conector-de-mongodb-para-bi" class="md-nav__link">
-    Conector de MongoDB para BI
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#optimizacion-de-la-carga-de-datos" class="md-nav__link">
-    Optimización de la carga de datos
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -409,135 +407,17 @@
                 <h1 id="fase-2-data-preparation"><strong>FASE 2: DATA PREPARATION</strong><a class="headerlink" href="#fase-2-data-preparation" title="Permanent link">&para;</a></h1>
 <p>Una vez cargados los datos desde un origen (Get Data), se tiene que preparar el dato para poder dejar el dato limpio, formateado y adaptado a las necesidades objetivo del proyecto.</p>
 <p>Existe una herramienta denominada <strong><em>Power Query</em></strong> que está integrada dentro de Power BI, por lo tanto, una vez cargados los datos, se puede acceder a esta herramienta con el fin de adaptar los datos.</p>
-<p>Power Query lo utilizamos:</p>
+<p>La preparación de datos consiste, por ejemplo, en escribir los datos en el formato correcto, filtrar, conservar o eliminar las filas de un archivo plano, dividir una columna, agregar una columna, reestructurar las tablas o incluso agregar los datos.</p>
+<div class="admonition info">
+<p class="admonition-title">Aviso</p>
+<p>El tamaño máximo del archivo (1 GB para la versión gratuita, 10 GB para la versión Premium), así como sobre todo el volumen de datos manejados (que determina en gran medida el rendimiento de la aplicación) son un fuerte aliciente para quedarse solo con las columnas y filas realmente útiles para el informe.</p>
+</div>
+<p><strong>Power Query</strong> lo utilizamos:</p>
 <ul>
 <li>Cuando cargamos nuevos datos.</li>
 <li>Cuando queremos editar consultas existentes.</li>
 <li>Cuando queremos crear nuevas consultas.</li>
 </ul>
-<p>NOOOO
-<img alt="imagen" src="imagenes/getdata1.PNG" /></p>
-<h2 id="archivos-o-ficheros"><strong>Archivos o Ficheros</strong><a class="headerlink" href="#archivos-o-ficheros" title="Permanent link">&para;</a></h2>
-<p>Conexión a orígenes de tipo físico, que contienen información estructurada y comprensible para su extracción desde la herramienta.</p>
-<p><img alt="imagen" src="imagenes/getdata2.PNG" /></p>
-<h2 id="database">DataBase<a class="headerlink" href="#database" title="Permanent link">&para;</a></h2>
-<p>Hay dos métodos de conectividad, es decir dos maneras de almacenar las tablas.</p>
-<p><img alt="imagen" src="imagenes/getdata3.PNG" /></p>
-<p><strong>Import Query</strong>: </p>
-<ul>
-<li>
-<p>Extrae la información de la base de datos y la mete dentro de Power BI Desktop.</p>
-</li>
-<li>
-<p>Importa la base de datos con metadatos, estructura, relaciones,...</p>
-</li>
-<li>
-<p>No existen restricciones para hacer cualquier tipo de manipulación.</p>
-</li>
-<li>
-<p>Existe limitación de 1GB para almacenar las tablas en nuestro pbix.</p>
-</li>
-<li>
-<p>La información puede ser actualizada hasta 8 veces por día desde Power BI Service de forma programada o desde Power BI Desktop con el botón <strong><em>Actualizar</em></strong>.</p>
-</li>
-</ul>
-<p><strong>Direct Query</strong></p>
-<ul>
-<li>Lanza varias queries para obtener datos que tenemos en el origen de datos (no almacena los datos en Power BI).</li>
-<li>No permite hacer ciertas manipulaciones (por ejemplo, eliminar columnas).</li>
-<li>La información se actualiza enn vivo (sin botón actualizar).</li>
-</ul>
-<p>Otra opción que aparece en los dos métodos de conectividad:</p>
-<p><img alt="imagen" src="imagenes/getdata4.PNG" /></p>
-<p>Opciones avanzadas:</p>
-<ul>
-<li>Limita el tiempo de extracción de datos.</li>
-<li>Optimiza el tamaño de las tablas (permitiendo crear consultas).</li>
-<li>Incluye relaciones entre columnas.</li>
-</ul>
-<h2 id="power-platform"><strong>Power Platform</strong><a class="headerlink" href="#power-platform" title="Permanent link">&para;</a></h2>
-<p>falta</p>
-<h2 id="servicios-externos"><strong>Servicios externos</strong><a class="headerlink" href="#servicios-externos" title="Permanent link">&para;</a></h2>
-<p>Obtener datos de una página Web:</p>
-<p><img alt="imagen" src="imagenes/getdata5.PNG" /></p>
-<p>Obtener datos de Python:</p>
-<p><img alt="imagen" src="imagenes/getdata6.PNG" /></p>
-<p>Obtener datos de Power BI datasets (Centro de datos):Permite obtener las tablas de un pbxi que ya teníamos creado.</p>
-<p><img alt="imagen" src="imagenes/getdata8.PNG" /></p>
-<p>Especificar datos:</p>
-<p><img alt="imagen" src="imagenes/getdata7.PNG" /></p>
-<h2 id="conector-de-mongodb-para-bi"><strong>Conector de MongoDB para BI</strong><a class="headerlink" href="#conector-de-mongodb-para-bi" title="Permanent link">&para;</a></h2>
-<p>El conector de BI sirve exclusivamente para unir su clúster de MongoDB con herramientas de inteligencia empresarial, en nuestro caso con PowerBI.</p>
-<p>Los componentes son:</p>
-<ul>
-<li><strong>Herramienta de BI:</strong> Herramientas de visualización y generación de informes, como Tableau y PowerBI. Se ejecuta en el equipo local.</li>
-<li><strong>JDBC o ODBC conductor:</strong> Proporciona un método estándar para conectarse al conector de BI y MongoDB.</li>
-<li><strong>Conector BI:</strong> Proporciona un esquema relacional y traduce consultas entre su herramienta de BI y MongoDB.</li>
-<li><strong>MongoDB:</strong> Implementación de bases de datos MongoD.</li>
-</ul>
-<p><img alt="imagen" src="imagenes/conector0.PNG" /></p>
-<p>Configuración del conector BI:</p>
-<p><img alt="imagen" src="imagenes/conector00.PNG" /></p>
-<p>Pasos:</p>
-<ol>
-<li>
-<p>Asegúrese de que está instalado MongoDB.</p>
-</li>
-<li>
-<p>Descarga e instala MongoDB BI Connector (mongogdb-odbc-connector) seleccionando la versión de acuerdo con la máquina que estés utilizando.</p>
-</li>
-</ol>
-<p><a href="https://www.mongodb.com/try/download/mongosync">enlace</a></p>
-<p><img alt="imagen" src="imagenes/mongo2.PNG" /></p>
-<ol start="3">
-<li>Agregar <em>mongodb-odbc-driver</em> a los orígenes de datos ODBC.</li>
-</ol>
-<ul>
-<li>Después de instalar ODBC, entra a la carpeta de MongoDB y asegurate de que tienes 2 carpetas nuevas.</li>
-<li>Entra en la carpeta <strong>path/Connector for BI/2.1/bin</strong> y ejecuta <em>mongosqld.exe</em> y te aparecerá la siguiente pantalla:</li>
-</ul>
-<p><img alt="imagen" src="imagenes/mongo3.PNG" /></p>
-<ul>
-<li>Abre orígenes de datos ODBC desde el menú de inicio.</li>
-</ul>
-<p><img alt="imagen" src="imagenes/mongo4.PNG" /></p>
-<ul>
-<li>Pulsamos "Agregar..." para agregar mongodb-odbc-driver a las fuentes de datos.</li>
-</ul>
-<p><img alt="imagen" src="imagenes/mongo5.PNG" /></p>
-<ul>
-<li>Seleccionamos <strong>MongoDB ODBC 1.0 Unicode Driver</strong>.</li>
-</ul>
-<p><img alt="imagen" src="imagenes/mongo6.PNG" /></p>
-<ul>
-<li>Completamos la información sobre el conector de BI desde el servicio en ejecución mongosqld.</li>
-</ul>
-<p><img alt="imagen" src="imagenes/mongo7.PNG" /></p>
-<p><img alt="imagen" src="imagenes/mongo8.PNG" /></p>
-<ol start="4">
-<li>Abre Power BI y en obtener datos, seleccionar más para encontrar ODBC.</li>
-</ol>
-<p><img alt="imagen" src="imagenes/mongo9.PNG" /></p>
-<p>Seleccionamos el origen de datos que hemos creado en el paso anterior.</p>
-<p><img alt="imagen" src="imagenes/mongo10.PNG" /></p>
-<h2 id="optimizacion-de-la-carga-de-datos"><strong>Optimización de la carga de datos</strong><a class="headerlink" href="#optimizacion-de-la-carga-de-datos" title="Permanent link">&para;</a></h2>
-<p>Cosas que tenemos que tener en cuenta:</p>
-<ol>
-<li>Cargar tablas directamente mediante SQL Queries.</li>
-<li>Quitar columnas innecesarias.</li>
-<li>Elegir tipo de datos adecuado.</li>
-<li>Minimiza el uso de filtros en informes.</li>
-<li>Optimizar el uso de funciones DAX.</li>
-<li>Elimina granularidad en los datos.</li>
-</ol>
-<p>Tenemos un Analizador de rendimiento:</p>
-<p><img alt="imagen" src="imagenes/getdata9.PNG" /></p>
-<ul>
-<li>Monitoriza los reports.</li>
-<li>Informes con rendimiento bajo.</li>
-<li>Actualización lenta de datos.</li>
-</ul>
-<p>El analizador nos devuelve el tiempo en milisegundos que ha tardado en realizar cada acción.</p>
                 
               
               
@@ -553,6 +433,41 @@
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Pie">
+      
+        
+        <a href="pag7.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 4.1. Get Data" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              4.1. Get Data
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="pag3.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: 5. Power Query Editor" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              5. Power Query Editor
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
