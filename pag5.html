@@ -16,7 +16,7 @@
     
     
       
-        <title>CREACIÓN DE INFORMES - Power BI</title>
+        <title>4.4. Data Visualization - Power BI</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#creacion-de-informes" class="md-skip">
+        <a href="#fase-4-data-visualization" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              CREACIÓN DE INFORMES
+              4.4. Data Visualization
             
           </span>
         </div>
@@ -233,12 +233,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" data-md-state="indeterminate" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       <label class="md-nav__link" for="__nav_4">
         4. Power BI Desktop
@@ -290,11 +292,72 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="paginaxx.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          4.4. Data Visualization
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="pag5.html" class="md-nav__link md-nav__link--active">
         4.4. Data Visualization
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#visualizaciones" class="md-nav__link">
+    Visualizaciones
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#filtros" class="md-nav__link">
+    Filtros
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#botones" class="md-nav__link">
+    Botones
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alertas" class="md-nav__link">
+    Alertas
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -340,23 +403,8 @@
   
   
     <li class="md-nav__item">
-      <a href="pagina5.md" class="md-nav__link">
-        6. Creación de informes
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="pagina6.md" class="md-nav__link">
-        7. Taller: Mejora de informes en Power BI
+      <a href="pag6.html" class="md-nav__link">
+        6. Mejora de informes
       </a>
     </li>
   
@@ -388,8 +436,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#tipos-de-visualizaciones" class="md-nav__link">
-    Tipos de Visualizaciones
+  <a href="#visualizaciones" class="md-nav__link">
+    Visualizaciones
   </a>
   
 </li>
@@ -399,39 +447,19 @@
     Filtros
   </a>
   
-    <nav class="md-nav" aria-label="Filtros">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#fase-1-get-data" class="md-nav__link">
-    Fase 1: Get Data
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#botones" class="md-nav__link">
+    Botones
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#fase-2-data-preparation" class="md-nav__link">
-    Fase 2: Data Preparation
+      
+        <li class="md-nav__item">
+  <a href="#alertas" class="md-nav__link">
+    Alertas
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#fase-3-data-modeling" class="md-nav__link">
-    Fase 3: Data Modeling
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#fase-4-data-visualization" class="md-nav__link">
-    Fase 4: Data Visualization
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -448,32 +476,63 @@
               
                 
                 
-                <h1 id="creacion-de-informes">CREACIÓN DE INFORMES<a class="headerlink" href="#creacion-de-informes" title="Permanent link">&para;</a></h1>
+                <h1 id="fase-4-data-visualization"><strong>FASE 4: DATA VISUALIZATION</strong><a class="headerlink" href="#fase-4-data-visualization" title="Permanent link">&para;</a></h1>
 <p>Pasos para crear un informe:</p>
 <ol>
-<li>Utilizar Power BI Desktop o Service.</li>
+<li>Utilizar Power BI Desktop.</li>
 <li>Seleccionar origen de datos.</li>
-<li>Modelado de datos (transformar datos, crear columnas, crear ,edidas,...).</li>
+<li>Preparar y modelar datos (transformar datos, crear columnas, crear medidas,...).</li>
 <li>Crear las relaciones (o revisar las que se han creado).</li>
-<li>Utilizar Visuals  (tablas, filtros, gráficos, etc).</li>
+<li>Utilizar Visualizaciones  (tablas, filtros, gráficos, etc).</li>
 <li>Publicar el pbix en PowerBi Service.</li>
 </ol>
-<h2 id="tipos-de-visualizaciones">Tipos de Visualizaciones<a class="headerlink" href="#tipos-de-visualizaciones" title="Permanent link">&para;</a></h2>
-<p><img alt="imagen" src="imagenes/informe1.PNG" /></p>
+<h2 id="visualizaciones"><strong>Visualizaciones</strong><a class="headerlink" href="#visualizaciones" title="Permanent link">&para;</a></h2>
 <p>Cuando instalamos Power BI, por defecto nos aparecen unos elementos de visualización básicos.</p>
+<p>Podemos descargar o importar objetos visuales desde <strong>Microsoft AppSource</strong> siempre que tengamos una cuenta corporativa. Encontramos algunos objetos que son gratuitos y otros de pago.</p>
+<p><img alt="imagen" src="imagenes/informe1.PNG" /></p>
+<p>Si no tenemos una cuenta corporativa podemos crear una gratuita desde <strong>office 365 enterprise</strong></p>
+<p><img alt="imagen" src="imagenes/gratis.png" /></p>
 <p>Si queremos utilizar algún tipo de visualización que no aparece por defecto, podemos importarlo desde la opción ...</p>
 <p><img alt="imagen" src="imagenes/informe2.PNG" /></p>
-<p>Podemos descargar o importar objetos visuales desde Microsoft AppSource siempre que tengamos una cuenta ........ y encontramos algunos objetos que son gratuitos y otros de pago.</p>
 <p><img alt="imagen" src="imagenes/informe3.PNG" /></p>
-<h2 id="filtros">Filtros<a class="headerlink" href="#filtros" title="Permanent link">&para;</a></h2>
-<p><img alt="imagen" src="imagenes/informe4.PNG" /></p>
-<p>Hay 3 tipos de filtros, los filtros afectan a todos las visualizaciones que tenemos en nuestro informe.
-Para que el filtro no le afecta a un tipo de gráfico en concreto tenemos que indicarlo. 
-Voy por aquí</p>
-<h3 id="fase-1-get-data">Fase 1: Get Data<a class="headerlink" href="#fase-1-get-data" title="Permanent link">&para;</a></h3>
-<h3 id="fase-2-data-preparation">Fase 2: Data Preparation<a class="headerlink" href="#fase-2-data-preparation" title="Permanent link">&para;</a></h3>
-<h3 id="fase-3-data-modeling">Fase 3: Data Modeling<a class="headerlink" href="#fase-3-data-modeling" title="Permanent link">&para;</a></h3>
-<h3 id="fase-4-data-visualization">Fase 4: Data Visualization<a class="headerlink" href="#fase-4-data-visualization" title="Permanent link">&para;</a></h3>
+<h2 id="filtros"><strong>Filtros</strong><a class="headerlink" href="#filtros" title="Permanent link">&para;</a></h2>
+<p><img alt="imagen" src="imagenes/filtro1.PNG" /></p>
+<p>Existen 3 jerarquias de filtros.
+Para que el filtro no le afecta a un tipo de gráfico en concreto tenemos que indicarlo. </p>
+<p><strong>1. El filtro afecta al gráfico que tenemos seleccionado en ese momento.</strong></p>
+<p><img alt="imagen" src="imagenes/filtro2.png" /></p>
+<p><strong>2. El filtro es para toda la página completa incluyendo todos los gráficos que tenemos en ella.</strong></p>
+<p><img alt="imagen" src="imagenes/filtro3.png" /></p>
+<p><strong>3. El filtro afecta a todas las páginas que tenemos en el pbix.</strong></p>
+<p><img alt="imagen" src="imagenes/filtro5.png" /></p>
+<h2 id="botones"><strong>Botones</strong><a class="headerlink" href="#botones" title="Permanent link">&para;</a></h2>
+<p>Podemos crear botones para que cuando pulsemos el botón, se desencadene una acción.</p>
+<p>Se pueden utilizar para crear botones tanto formas como imágenes.</p>
+<p>Vamos a crear un botón para que nos aparezcan los gráficos de barras y otro botón para los gráficos de líneas.</p>
+<p><img alt="imagen" src="imagenes/boton1.PNG" /></p>
+<p>Creamos los <strong>botones blancos</strong> y visualizamos los menús de marcadores y selección.
+En el panel <strong>Formato</strong> modificamos las características del botón como color de fondo, borde, títulos, etc.</p>
+<p><img alt="imagen" src="imagenes/boton2.PNG" /></p>
+<p>Le damos el formato que queramos al botón y desactivamos la visualización de los dos gráficos (pulsando el ojo) y <strong>agregamos</strong> el Marcador1.</p>
+<p><img alt="imagen" src="imagenes/boton3.PNG" /></p>
+<p>Seguimos los mismos pasos pero con los gráficos de líneas y <strong>agregamos</strong> el Marcador2.</p>
+<p><img alt="imagen" src="imagenes/boton6.PNG" /></p>
+<p>Pulsando <strong>CTRL</strong> y el botón podemos visualizar los dos tipos de gráficos:</p>
+<p><img alt="imagen" src="imagenes/boton7.PNG" /></p>
+<p><img alt="imagen" src="imagenes/boton8.PNG" /></p>
+<h2 id="alertas"><strong>Alertas</strong><a class="headerlink" href="#alertas" title="Permanent link">&para;</a></h2>
+<p>Vamos a crear una alerta haciendo que cambie de color si no cumple ciertos parámetros.</p>
+<div class="admonition info">
+<p class="admonition-title">Ejemplo</p>
+<p>Creamos una <em>medida</em> que vamos a llamar <strong>Alerta</strong> que nos va a avisar si el total de los sueldos de un departamento es inferior a 1.000.000.</p>
+</div>
+<p><img alt="imagen" src="imagenes/alerta1.PNG" /></p>
+<p>Seleccionamos el gráfico donde queremos poner la alerta y pulsamos el botón fx:</p>
+<p><img alt="imagen" src="imagenes/alerta2.PNG" /></p>
+<p>Elegimos las siguientes opciones:</p>
+<p><img alt="imagen" src="imagenes/alerta3.PNG" /></p>
+<p>El resultado final sería:</p>
+<p><img alt="imagen" src="imagenes/alerta5.PNG" /></p>
                 
               
               
@@ -489,6 +548,41 @@ Voy por aquí</p>
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Pie">
+      
+        
+        <a href="pag9.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 4.3. Data Modeling" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              4.3. Data Modeling
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="pag3.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: 5. Power Query Editor" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              5. Power Query Editor
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
