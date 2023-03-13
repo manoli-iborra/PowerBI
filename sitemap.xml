@@ -2,52 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://manoli-iborra.github.io/PowerBI/index.html</loc>
-         <lastmod>2023-03-08</lastmod>
+         <lastmod>2023-03-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://manoli-iborra.github.io/PowerBI/pag1.html</loc>
-         <lastmod>2023-03-08</lastmod>
+         <lastmod>2023-03-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://manoli-iborra.github.io/PowerBI/pag2.html</loc>
-         <lastmod>2023-03-08</lastmod>
+         <lastmod>2023-03-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://manoli-iborra.github.io/PowerBI/pag3.html</loc>
-         <lastmod>2023-03-08</lastmod>
+         <lastmod>2023-03-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://manoli-iborra.github.io/PowerBI/pag4.html</loc>
-         <lastmod>2023-03-08</lastmod>
+         <lastmod>2023-03-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://manoli-iborra.github.io/PowerBI/pag4_ampliada.html</loc>
+         <lastmod>2023-03-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://manoli-iborra.github.io/PowerBI/pag5.html</loc>
-         <lastmod>2023-03-08</lastmod>
+         <lastmod>2023-03-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://manoli-iborra.github.io/PowerBI/pag6.html</loc>
-         <lastmod>2023-03-08</lastmod>
+         <lastmod>2023-03-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://manoli-iborra.github.io/PowerBI/pag7.html</loc>
-         <lastmod>2023-03-08</lastmod>
+         <lastmod>2023-03-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://manoli-iborra.github.io/PowerBI/pag8.html</loc>
-         <lastmod>2023-03-08</lastmod>
+         <lastmod>2023-03-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://manoli-iborra.github.io/PowerBI/pag9.html</loc>
-         <lastmod>2023-03-08</lastmod>
+         <lastmod>2023-03-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
