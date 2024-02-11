@@ -9,14 +9,14 @@
       
       
       
-        <link rel="canonical" href="https://manoli-iborra.github.io/PowerBI/pag9.html">
+        <link rel="canonical" href="https://manoli-iborra.github.io/PowerBI/pag10.html">
       
       <link rel="icon" href="imagenes/favicon.png">
       <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.6">
     
     
       
-        <title>4.3. Data Modeling - Power BI</title>
+        <title>7. Más DAX - Power BI</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#fase-3-data-modeling" class="md-skip">
+        <a href="#lenguaje-dax" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              4.3. Data Modeling
+              7. Más DAX
             
           </span>
         </div>
@@ -233,14 +233,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" data-md-state="indeterminate" type="checkbox" id="__nav_4" checked>
       
       <label class="md-nav__link" for="__nav_4">
         4. Power BI Desktop
@@ -280,6 +278,81 @@
             
   
   
+  
+    <li class="md-nav__item">
+      <a href="pag9.html" class="md-nav__link">
+        4.3. Data Modeling
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pag5.html" class="md-nav__link">
+        4.4. Data Visualization
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pag4.html" class="md-nav__link">
+        4.5. Data Reporting
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pag3.html" class="md-nav__link">
+        5. Power Query Editor
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pag6.html" class="md-nav__link">
+        6. Mejora de informes
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
     
   
   
@@ -292,12 +365,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          4.3. Data Modeling
+          7. Más DAX
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="pag9.html" class="md-nav__link md-nav__link--active">
-        4.3. Data Modeling
+      <a href="pag10.html" class="md-nav__link md-nav__link--active">
+        7. Más DAX
       </a>
       
         
@@ -356,7 +429,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lenguaje-dax" class="md-nav__link">
+  <a href="#lenguaje-dax_1" class="md-nav__link">
     Lenguaje DAX
   </a>
   
@@ -457,81 +530,6 @@
     </li>
   
 
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="pag5.html" class="md-nav__link">
-        4.4. Data Visualization
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="pag4.html" class="md-nav__link">
-        4.5. Data Reporting
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="pag3.html" class="md-nav__link">
-        5. Power Query Editor
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="pag6.html" class="md-nav__link">
-        6. Mejora de informes
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="pag10.html" class="md-nav__link">
-        7. Más DAX
-      </a>
-    </li>
-  
-
     
   </ul>
 </nav>
@@ -600,7 +598,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lenguaje-dax" class="md-nav__link">
+  <a href="#lenguaje-dax_1" class="md-nav__link">
     Lenguaje DAX
   </a>
   
@@ -707,18 +705,14 @@
               
                 
                 
-                <h1 id="fase-3-data-modeling"><strong>FASE 3: DATA MODELING</strong><a class="headerlink" href="#fase-3-data-modeling" title="Permanent link">&para;</a></h1>
-<p>En la fase de Data Modeling, se definen las relaciones entre tablas, la cardinalidad en las relaciones, la visibilidad de campos, tablas y columnas calculadas que serán necesarias para completara la información requerida en los KPIs, para la representación de los indicadores.</p>
-<p>Al importar los datos en Power BI Desktop, es muy importante contar con un modelo capaz de responder a las preguntas del negocio y es por lo que las relaciones entre las tablas deben estar bien definidas, ya que ellas ayudan a mostrar resultados claros en los informes.</p>
-<p>Los modelos más utilizados son en <strong>Estrella</strong> y <strong>Snowflake</strong>, formadas por dos tipos de tablas:</p>
-<ul>
-<li>
-<p><strong>Dimensiones:</strong> Almacenan información relacionada con el "Que", "Cuando", "Como",.. dentro de la base de datos.</p>
-</li>
-<li>
-<p><strong>Hechos (o Facts):</strong> Almacena información relacionada con los datos de las dimensiones, pero con elo fin de representar el "Cuanto" en las transacciones de las tablas relacionadas.</p>
-</li>
-</ul>
+                <h1 id="lenguaje-dax"><strong>LENGUAJE DAX</strong><a class="headerlink" href="#lenguaje-dax" title="Permanent link">&para;</a></h1>
+<p>DAX significa Expresiones de Análisis de Datos. Es un lenguaje de fórmulas que se utiliza en diferentes herramientas de Microsoft y te permite crear medidas, columnas calculadas, tablas calculadas y seguridad a nivel de filas.</p>
+<div class="admonition info">
+<p class="admonition-title">Aviso</p>
+<p>DAX no es sensible a mayúsculas o minúsculas.</p>
+</div>
+<p>Existe una herramienta gratuita que transforma las fórmulas DAX en código limpio, atractivo y legible.</p>
+<p><img alt="imagen" src="imagenes/format.PNG" /></p>
 <h2 id="modelos-relacionales"><strong>Modelos Relacionales</strong><a class="headerlink" href="#modelos-relacionales" title="Permanent link">&para;</a></h2>
 <h3 id="1-el-modelo-en-estrella"><strong>1. El modelo en estrella</strong><a class="headerlink" href="#1-el-modelo-en-estrella" title="Permanent link">&para;</a></h3>
 <p>Consisten en la relación de las tablas de hechos y dimensiones, de forma que la tabla de hechos queda centrada y las dimensiones, se relacionan con la tabla de hechos con un único nivel.</p>
@@ -743,7 +737,7 @@
 <p>El <strong>ojo</strong> hace referencia a ocultar/mostrar tablas.</p>
 <p>Mientras que los tres puntos permiten realizar una serie de acciones:</p>
 <p><img alt="imagen" src="imagenes/relacion7.PNG" width="500" /></p>
-<h2 id="lenguaje-dax"><strong>Lenguaje DAX</strong><a class="headerlink" href="#lenguaje-dax" title="Permanent link">&para;</a></h2>
+<h2 id="lenguaje-dax_1"><strong>Lenguaje DAX</strong><a class="headerlink" href="#lenguaje-dax_1" title="Permanent link">&para;</a></h2>
 <p>DAX es un lenguaje de fórmulas usado en Power BI que significa <strong>Data Analysis Expressions</strong> o <strong>Expresiones de Análisis de Datos</strong>. Las funciones que nos proporciona tienen funcionalidades idénticas y los mismos nombres que las funciones de Excel.</p>
 <p>Se utiliza para crear columnas calculadas, medidas y tablas personalizadas.</p>
 <p>Existen diferentes tipos de funciones en el lenguaje DAX, que se agrupan de forma que cada uno de estos grupos, tienen unas finalidades específicas en el desarrollo de medidas y columnas calculadas.</p>
@@ -892,7 +886,7 @@ Con CALCULATE comenzarán la mayoría de las fórmulas que diseñemos en los inf
     <nav class="md-footer__inner md-grid" aria-label="Pie">
       
         
-        <a href="pag8.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 4.2. Data Preparing" rel="prev">
+        <a href="pag6.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 6. Mejora de informes" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -901,26 +895,11 @@ Con CALCULATE comenzarán la mayoría de las fórmulas que diseñemos en los inf
               <span class="md-footer__direction">
                 Anterior
               </span>
-              4.2. Data Preparing
+              6. Mejora de informes
             </div>
           </div>
         </a>
       
-      
-        
-        <a href="pag5.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: 4.4. Data Visualization" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Siguiente
-              </span>
-              4.4. Data Visualization
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
       
     </nav>
   
