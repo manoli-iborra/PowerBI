@@ -364,9 +364,39 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          7. Más DAX
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="pag10.html" class="md-nav__link md-nav__link--active">
         7. Más DAX
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tabla-de-medidas" class="md-nav__link">
+    Tabla de medidas
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -391,6 +421,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tabla-de-medidas" class="md-nav__link">
+    Tabla de medidas
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -403,17 +448,27 @@
                 
                 
                 <h1 id="lenguaje-dax"><strong>LENGUAJE DAX</strong><a class="headerlink" href="#lenguaje-dax" title="Permanent link">&para;</a></h1>
-<p>DAX significa Expresiones de Análisis de Datos. Es un lenguaje de fórmulas que se utiliza en diferentes herramientas de Microsoft y te permite crear medidas, columnas calculadas, tablas calculadas y seguridad a nivel de filas.</p>
+<p><strong>DAX</strong> significa Expresiones de Análisis de Datos. Es un lenguaje de fórmulas que se utiliza en diferentes herramientas de Microsoft y te permite crear medidas, columnas calculadas, tablas calculadas y seguridad a nivel de filas.</p>
 <div class="admonition info">
 <p class="admonition-title">Aviso</p>
 <p>DAX no es sensible a mayúsculas o minúsculas.</p>
 </div>
-<p>Existe una herramienta gratuita que transforma las fórmulas DAX en código limpio, atractivo y legible.</p>
+<p>Existe una herramienta gratuita que transforma las fórmulas DAX en código limpio, atractivo y legible. Esta herramienta es <strong>DAXFORMATTER</strong>.</p>
 <p><img alt="imagen" src="imagenes/format.PNG" /></p>
+<h2 id="tabla-de-medidas"><strong>Tabla de medidas</strong><a class="headerlink" href="#tabla-de-medidas" title="Permanent link">&para;</a></h2>
+<p>Muchas veces creamos medidas y se las vamos poniendo en las diferentes tablas de nuestro proyecto. La solución más óptima será crear una tabla únicamente con las medidas creadas.</p>
+<p>La tabla de medidas no forma parte del modelo de datos, por lo tanto no tiene que estar relacionada con ninguna otra tabla.</p>
+<p><img alt="imagen" src="imagenes/tablamedidas.png" /></p>
+<p>Para pasar las medidas creadas a la tabla de medidas podemos hacerlo de dos formas:</p>
+<ol>
+<li>Desde Herramientas de medicción:</li>
+</ol>
+<p><img alt="imagen" src="imagenes/medida1.png" /></p>
+<ol start="2">
+<li>Desde Vista Modelo: arrastramos la medida hasta la tabla de medidas.</li>
+</ol>
+<p>A partir de ahora, todas las medidas que tengamos que crear, lo haremos sobre la tabla de medidas.</p>
 <!--
-
-## **Modelos Relacionales**
-
 ### **1. El modelo en estrella**
 
 Consisten en la relación de las tablas de hechos y dimensiones, de forma que la tabla de hechos queda centrada y las dimensiones, se relacionan con la tabla de hechos con un único nivel.
